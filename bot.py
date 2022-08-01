@@ -105,11 +105,7 @@ async def mentionall(event):
       await asyncio.sleep(2)
       usrnum = 0
       usrtxt = ''
-
-	
-	
-	
-
+   
   try:
     spam_chats.remove(chat_id)
   except:
