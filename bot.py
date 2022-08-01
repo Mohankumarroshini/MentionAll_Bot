@@ -99,7 +99,7 @@ async def mentionall(event):
    
        continue
     usrnum += 1
-    usrtxt += usr.username
+    usrtxt += f"@{usr.username}"
     
               
     if usrnum == 1:
