@@ -21,12 +21,12 @@ spam_chats = []
 @client.on(events.NewMessage(pattern="^/start$"))
 async def start(event):
   await event.reply(
-    "__**ι'м 𐏓︭͟𝐈𝛕ᷟ͢𝚣⃪ꙴ ❦∂єνι✨➳⃝🦋 𝆹𝅥˚˚**, ι ωιℓℓ нєℓρ уσυ тσ мαкє fυи ωιтн уσυ\ ᴄℓιᴄк**/help** fσя мσяє ιиfσ__\n\n נσιи [нσυѕє σf ɢнσѕт](https://t.me/houseofghost) fσя fυи .",
+    "__**ι'м 𐏓︭͟𝐈𝛕ᷟ͢𝚣⃪ꙴ ❦∂єνι✨➳⃝🦋 𝆹𝅥˚˚**, ι ωιℓℓ нєℓρ уσυ тσ мαкє fυи ωιтн уσυ\n ᴄℓιᴄк**/help** fσя мσяє ιиfσ__\n\n נσιи [нσυѕє σf ɢнσѕт](https://t.me/houseofghost) fσя fυи .",
     link_preview=False,
     buttons=(
       [
-        Button.url('📣 Channel', 'https://t.me/STAR_BOY_KA_ADDA'),
-        Button.url('📦 Source', 'https://github.com/ITZRAJOP/MentionAll_Bot')
+        Button.url('ᴄнαт ɢяᴘ', 'https://t.me/houseofghost'),
+        Button.url('σωиєя', 'https://t.me/my_dear_lightbright')
       ]
     )
   )
