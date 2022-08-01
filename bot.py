@@ -95,9 +95,9 @@ async def mentionall(event):
     if not chat_id in spam_chats:
       break
 if usr.deleted:
-    continue
+   continue
 usrnum += 1
-    usrtxt += f"{usr.username}"
+    usrtxt += f@"{usr.username}"
     if usrnum == 1:
       if mode == "text_on_cmd":
         txt = f"{usrtxt}\n\n{msg}"
