@@ -35,7 +35,7 @@ async def start(event):
 
 @client.on(events.NewMessage(pattern="^/help$"))
 async def help(event):
-  helptext = "**нєℓρ мєиυ σf 𐏓︭͟𝐈𝛕ᷟ͢𝚣⃪ꙴ ❦∂єνι➳⃝🦋 𝆹𝅥˚˚**\n\nᴄσммαи∂: /mentionall\n__You can use this command with text what you want to say to others.__\n`єχαмρℓє: /mentionall MSD on fire🔥!"
+  helptext = "**нєℓρ мєиυ σf 𐏓︭͟𝐈𝛕ᷟ͢𝚣⃪ꙴ ❦∂єνι➳⃝🦋 𝆹𝅥˚˚**\n\nᴄσммαи∂: /mentionall\n__уσυ ᴄαи υѕє тнιѕ ᴄσммαи∂ ωιтн тєχт ωнαт уσυ ωαит тσ ѕαу тσ σтнєяѕ.__\n`єχαмρℓє`: /mentionall MSD on fire🔥!"
   await event.reply(
     helptext,
     link_preview=False,
