@@ -99,7 +99,7 @@ async def mentionall(event):
     usrnum += 1
     usrtxt += usr.username if usr.username else
 
-continue
+              continue
     if usrnum == 1:
       if mode == "text_on_cmd":
         txt = f"{usrtxt}\n\n{msg}"
