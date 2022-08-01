@@ -35,14 +35,14 @@ async def start(event):
 
 @client.on(events.NewMessage(pattern="^/help$"))
 async def help(event):
-  helptext = "**Help Menu of MentionAll_Bot**\n\nCommand: /mentionall\n__You can use this command with text what you want to say to others.__\n`Example: /mentionall ShikariBaaZ is Always on Shikar!`\n__You can you this command as a reply to any message. Bot will tag users to that replied messsage__.\n\nFollow [@The_Shikarii](https://github.com/ShikariBaaZ) on Github"
+  helptext = "**Help Menu of 𐏓︭͟𝐈𝛕ᷟ͢𝚣⃪ꙴ ❦∂єνι➳⃝🦋 𝆹𝅥˚˚**\n\nCommand: /mentionall\n__You can use this command with text what you want to say to others.__\n`Example: /mentionall MSD on fire🔥!`\n__You can you this command as a reply to any message. Bot will tag users to that replied messsage."
   await event.reply(
     helptext,
     link_preview=False,
     buttons=(
       [
-        Button.url('📣 Group', 'https://t.me/STAR_BOY_KA_ADDA'),
-        Button.url('📦 Source', 'https://github.com/ITZRAJOP/MentionAll_Bot')
+        Button.url('ᴄнαт ɢяᴘ', 'https://t.me/houseofghost'),
+        Button.url('σωиєя', 'https://t.me/my_dear_lightbright')
       ]
     )
   )
