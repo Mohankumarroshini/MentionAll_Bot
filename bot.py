@@ -94,10 +94,12 @@ async def mentionall(event):
   async for usr in client.iter_participants(chat_id):
     if not chat_id in spam_chats:
       break
-    if usr.deleted:
+    if usr.deleted or not usr.username:
+
+   
        continue
     usrnum += 1
-    usrtxt += usr.username if usr.username else continue
+    usrtxt += usr.username
     
               
     if usrnum == 1:
