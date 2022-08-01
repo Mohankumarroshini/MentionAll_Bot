@@ -96,8 +96,8 @@ async def mentionall(event):
       break
     if usr.deleted:
        continue
-usrnum += 1
-usrtxt += f"@{usr.username}"
+    usrnum += 1
+    usrtxt += f"@{usr.username}"
     if usrnum == 1:
       if mode == "text_on_cmd":
         txt = f"{usrtxt}\n\n{msg}"
