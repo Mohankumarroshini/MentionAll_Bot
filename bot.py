@@ -105,7 +105,7 @@ async def mentionall(event):
       await asyncio.sleep(2)
       usrnum = 0
       usrtxt = ''
-if usr.deleted: 
+
 	
 	
 	
