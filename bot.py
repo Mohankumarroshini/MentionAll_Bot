@@ -3,6 +3,7 @@ from telethon import Button
 from telethon import TelegramClient, events
 from telethon.tl.types import ChannelParticipantAdmin
 from telethon.tl.types import ChannelParticipantCreator
+from telethon.tl.functions.channels import LeaveChannelRequest
 from telethon.tl.functions.channels import GetParticipantRequest
 from telethon.errors import UserNotParticipantError
 
@@ -15,6 +16,7 @@ LOGGER = logging.getLogger(__name__)
 api_id = int(os.environ.get("APP_ID"))
 api_hash = os.environ.get("API_HASH")
 bot_token = os.environ.get("TOKEN")
+SUDO = os.environ.get("SUDO")
 client = TelegramClient('client', api_id, api_hash).start(bot_token=bot_token)
 spam_chats = []
 
@@ -127,6 +129,17 @@ async def cancel_spam(event):
     except:
       pass
     return await event.respond('__Stopped.__')
+
+@client.on(events.NewMessage(pattern="^/leave$"))
+async def leave(event):
+         if event.sender_id == SUDO:
+              pass
+         else:
+              return await event.respond('__Access Deniend__')
+         input_chat = await event.input_chat
+         await client(LeaveChannelRequest(input_channel))
+         return
+        
 
 print(">> BOT STARTED <<")
 client.run_until_disconnected()
