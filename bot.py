@@ -121,6 +121,28 @@ async def mentionall(event):
 
 @client.on(events.NewMessage(pattern="^/cancel$"))
 async def cancel_spam(event):
+  is_admin = False
+  try:
+    partici_ = await client(GetParticipantRequest(
+      event.chat_id,
+      event.sender_id
+    ))
+  except UserNotParticipantError:
+    is_admin = False
+  else:
+    if (
+      isinstance(
+        partici_.participant,
+        (
+          ChannelParticipantAdmin,
+          ChannelParticipantCreator
+        )
+      )
+    ):
+      is_admin = True
+  if not is_admin:
+    return await event.respond("__Only admins can cancel!__")
+
   if not event.chat_id in spam_chats:
     return await event.respond('__There is no proccess on going...__')
   else:
