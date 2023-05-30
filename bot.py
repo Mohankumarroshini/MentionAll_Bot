@@ -29,7 +29,7 @@ async def start(event):
     link_preview=False,
     buttons=(
       [
-        Button.url('ᴄнαт ɢяᴘ', 'https://t.me/houseofghost'),
+        Button.url('ᴄнαт ɢяᴘ', 'https://t.me/budiesforever'),
         Button.url('σωиєя', 'https://t.me/my_dear_lightbright')
       ]
     )
